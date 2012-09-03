@@ -1,18 +1,18 @@
 import java.util.*;
 class node{
-        public char status;
-        public String code;
-        public char key;
-        public int freq;
-        public node left,right,parent;
-        public node(){
+        char status;
+        String code;
+        char key;
+        int freq;
+        node left,right,parent;
+        node(){
 
         }
-        public node(char k,int f){
+        node(char k,int f){
                 key=k;
                 freq=f;
         }
-        public void solve(){
+        void solve(){
                 if(parent!=null){
                         code=parent.code+Character.toString(status);
                 }
