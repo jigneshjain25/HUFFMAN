@@ -31,6 +31,7 @@ class nodeComparator implements Comparator<node>
     public int compare(node x, node y)
     {
         if(x.freq>y.freq)return 1;
+        else if(x.freq<y.freq)return -1;
         return 0;
         
     }
