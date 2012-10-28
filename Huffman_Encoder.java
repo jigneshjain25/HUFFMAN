@@ -57,8 +57,8 @@ public class Huffman_Encoder{
                 PriorityQueue<node> q=new PriorityQueue<node>(1000,comparator);
                 while(i.hasNext()) { 
                          Map.Entry me = (Map.Entry)i.next(); 
-                         key=(char)me.getKey(); 
-                         freq=(int)me.getValue();
+                         key=(Character)me.getKey(); 
+                         freq=(Integer)me.getValue();
                          q.add(new node(key,freq));
                 } 
                 while(q.size() > 1)
